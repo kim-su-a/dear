@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+} */
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul,ol{
+    list-style: none;
+}
+html{
+    font-size: 17px;
+    line-height: 28px;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #666;
+}
+#wrap{
+    min-width: 1320px;
+}
+/* header*/
+#header{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    z-index: 9;
+    position: relative;
+}
+#header:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#header:hover .gnb li a{
+    color: #ae9476;
+}
+#header:hover  .util li{
+    color: #777;
+}
+.logo{
+	padding-top: 20px;
+	float: left;
+    position:relative;
+}
+.logo img{
+    position:absolute;
+}
+.logo img.img-hover{
+    display:none;
+}
+#header:hover img.img{
+    display:none;
+}
+#header:hover img.img-hover{
+    display:block
+}
+.util {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+.util li {
+	float: left;
+	padding: 0 10px;
+	font-size: 15px;
+    color: #fff;
+}
+.gnb {
+	float: right;
+	margin-top: 40px;
+}
+.gnb li {
+	float: left;
+}
+.gnb li a{
+	display: block;
+	font-size: 22px;
+    font-weight: 900;
+    color: #fff;
+	margin: 0 35px;
+}
+
+/*banner*/
+#banner {
+	background-image: url(../images/sub/class/class_banner.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 800px;
+}
+.inner_banner{
+	width: 1320px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 530px;
+}
+.inner_banner p{
+    color: #fff
+}
+.about{
+    font-size: 50px;
+    font-weight: 900;
+}
+.about2{
+    font-size: 27px;
+    font-weight: 600;
+}
+.border{
+    width: 60px;
+    border-top: 4px solid #fff;
+    display: inline-block;
+    margin: 35px 0 30px 0;
+}
+
+/*contanier*/
+.con_border{
+    display: block;
+    margin: 0 auto;
+    width: 1100px;
+    border-bottom: 1px solid #B4AA9A;
+}
+
+
+/*section1*/
+#section1{
+    width: 1320px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 0 120px;
+    box-sizing: border-box;
+}
+.section1_left{
+    width: 466px;
+    float: left;
+}
+.section1_right{
+    width: 466px;
+    float: right;
+}
+.title{
+    padding-top: 45px;
+    font-size: 40px;
+    font-weight: 800;
+}
+.text{
+    font-size: 23px;
+    line-height: 48px;
+    padding-top: 45px;
+}
+.img_wrap {
+    overflow: hidden;
+    width: 466px;
+    height: 400px;
+    border-radius: 50px;
+}
+.img_wrap img{
+    width: 100%;
+    display: block;
+    transition: transform 1s;
+}
+.right{
+    text-align: right;
+}
+.hover_wrap{
+    position: relative;
+    margin-bottom: 20px;
+}
+.hover_wrap:hover .img_wrap img{
+    transform: scale(1.1);
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    padding: 147px 0;
+    color: #fff;
+    transition: opacity 1s;
+    box-sizing: border-box;
+    border-radius: 50px;
+    opacity: 0;
+    text-align: center;
+}
+.hover_wrap:hover .cover{
+    opacity:1;
+}
+.cover_txt{
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.class_btn{
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 7px 35px;
+}
+.class_btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*section2*/
+#section2{
+    height: 70px;
+    margin: 0 auto;
+    padding: 100px 0 150px;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    border: 1px solid #777;
+    color: #777;
+    padding: 20px 70px;
+    font-size: 25px;
+}
+.btn:hover{
+    font-weight: 700;
+    border: 2px solid #777;
+}
+
+
+/*footer*/
+#footer {
+    height: 300px;
+    background-color: #DCD0B7;
+    text-align: center;
+}
+.sns {
+    display: inline-block
+}
+.sns li {
+    float: left;
+    padding: 0 15px;
+}
+.sns li a img {
+    opacity: 0.7;
+}
+.sns li a img:hover {
+    opacity: 1;
+}
+.footer_link{
+    padding-top: 15px;
+    display: inline-block;
+}
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.footer_link li {
+    float: left;
+    padding-right: 20px;
+}
+.footer_link li a {
+    color: #707070;
+}
+.footer_link li a:hover{
+    color: #fff;
+}
+.inner_footer p {
+    color: #fff;
+    padding-top: 15px;
+    line-height: 35px;
+}
+
+
+
